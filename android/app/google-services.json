@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "742215271085",
+    "project_id": "clone-f9ca6",
+    "storage_bucket": "clone-f9ca6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742215271085:android:eaafc5169eaf0e65333c24",
+        "android_client_info": {
+          "package_name": "zeus.app.amazon_clone"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9X0HpH0wCMb2SVj21pq-_b8_S3kYJlh4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

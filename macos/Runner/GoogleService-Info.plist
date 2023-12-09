@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyDYphJQ7cZR-I3gEGoIFYtmUKxCsdMyk5E</string>
+	<key>GCM_SENDER_ID</key>
+	<string>742215271085</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>zeus.app.amazonClone.RunnerTests</string>
+	<key>PROJECT_ID</key>
+	<string>clone-f9ca6</string>
+	<key>STORAGE_BUCKET</key>
+	<string>clone-f9ca6.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:742215271085:ios:6371ec3f63443190333c24</string>
+</dict>
+</plist>
