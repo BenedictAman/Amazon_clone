@@ -85,6 +85,11 @@ bool isLoading = false;
                           Align(
                             alignment: Alignment.center,
                             child: CustomMainButton(
+                               child: const Text(
+                                "Sign In",
+                                style: TextStyle(
+                                    letterSpacing: 0.6, color: Colors.black),
+                              ),
                               color: yellowColor,
                               isLoading: isLoading,
                               onPressed: ()async {
@@ -110,11 +115,6 @@ bool isLoading = false;
                                        );
                                    }
                               },
-                              child: const Text(
-                                "Sign In",
-                                style: TextStyle(
-                                    letterSpacing: 0.6, color: Colors.black),
-                              ),
                             ),
                           )
                         ],

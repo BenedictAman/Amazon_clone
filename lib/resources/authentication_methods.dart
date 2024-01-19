@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 class AuthenticationMethods{
   FirebaseAuth firebaseAuth = FirebaseAuth.instance;
   CloudFireStoreClass cloudFireStoreClass = CloudFireStoreClass();
+  // ignore: non_constant_identifier_names
   Future<String> signUpUser({required String name,required String address,required String email,required String Password}) async{
     name.trim();
     address.trim();
@@ -16,7 +17,7 @@ class AuthenticationMethods{
         await firebaseAuth.createUserWithEmailAndPassword(
           email: email, password: Password);
           UserDetailsModel user = UserDetailsModel(name: name, address: address);
-          await cloudFireStoreClass.uploadManeAndAddressTODatabase(
+          await cloudFireStoreClass.uploadNameAndAddressTODatabase(
             user : user);
         output = "success";
       }on FirebaseAuthException catch (e){

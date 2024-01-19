@@ -8,5 +8,8 @@ class UserDetailsModel {
     "name" : name,
     "address" : address,
      };
+
+factory UserDetailsModel.getModelFromJson(Map<String, dynamic> json) {
+    return UserDetailsModel(name: json["name"], address: json["address"]);
+  }
 }
-// UserDetailsModel aman = UserDetailsModel(name: "Aman", address: "Somewhere");

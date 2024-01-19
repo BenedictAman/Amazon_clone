@@ -1,3 +1,4 @@
+import 'package:amazon_clone/screens/results_screen.dart';
 import 'package:amazon_clone/screens/search_screen.dart';
 import 'package:amazon_clone/utils/color_theams.dart';
 import 'package:amazon_clone/utils/constants.dart';
@@ -5,12 +6,12 @@ import 'package:amazon_clone/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 
+// ignore: must_be_immutable
 class SearchBarWidget extends StatelessWidget implements PreferredSizeWidget {
 final bool isReadonly;
 final bool hasBackButton;
 
 @override
-  // TODO: implement preferredSize
   Size get preferredSize => const Size.fromHeight(kAppBarHeight);
 
   SearchBarWidget({super.key,
@@ -21,7 +22,7 @@ final bool hasBackButton;
 
   OutlineInputBorder border = OutlineInputBorder(
     borderRadius: BorderRadius.circular(7),
-    borderSide: BorderSide(color: Colors.grey,
+    borderSide: const BorderSide(color: Colors.grey,
     width: 1,
     ),
     );
@@ -61,6 +62,12 @@ final bool hasBackButton;
                         ], 
                         ),
                   child: TextField(
+                    onSubmitted: (String query){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>ResultsScreen(query: query,
+                      ),
+                      ),
+                      );
+                    },
                     readOnly: isReadonly,
                     onTap: (){
                       if(isReadonly){
@@ -84,7 +91,7 @@ final bool hasBackButton;
                 ),
                 IconButton(
                   onPressed: (){},
-                   icon: Icon(Icons.mic_none_outlined),
+                   icon: const Icon(Icons.mic_none_outlined),
                    ),
             ],
             ),

@@ -1,4 +1,9 @@
+import 'package:amazon_clone/model/product_model.dart';
+import 'package:amazon_clone/screens/accounts_screen.dart';
+import 'package:amazon_clone/screens/cart_screen.dart';
 import 'package:amazon_clone/screens/home_screen.dart';
+import 'package:amazon_clone/screens/more_screen.dart';
+import 'package:amazon_clone/widgets/simple_product_widget.dart';
 import 'package:flutter/material.dart';
 
 const double kAppBarHeight = 80;
@@ -20,15 +25,9 @@ const List<String> categoriesList = [
 
 const List<Widget> screens =  [
             HomeScreen(),
-            Center(
-              child: Text("Account screen"),
-              ),
-            Center(
-              child: Text("Cart screen"),
-              ),
-            Center(
-              child: Text("More screen"),
-              ),
+            AccountScreen(),
+            CartScreen(),
+            MoreScreen(),
           ];
 
 const List<String> categoryLogos = [
@@ -68,3 +67,84 @@ const List<String> adItemNames = [
 //Dont even attemp to scroll to the end of this manually lmao
 const String amazonLogo =
     "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/2560px-Amazon_logo.svg.png";
+
+ List<Widget> testChildren =[
+  SimpleProductWidget(
+    productModel: ProductModel(
+                            url:
+                             "https://m.media-amazon.com/images/I/11uufjN3lYL._SX90_SY90_.png",
+                             productName: "Zeus",
+                             cost: 999999999,
+                             discount: 0,
+                             uid: "asdfghjkl",
+                             sellerName: "don",
+                             sellerUid: "lkjhgfdsa",
+                             rating: 1,
+                             noOfRating: 1,
+                             ),
+                             ),
+  SimpleProductWidget(
+    productModel: ProductModel(
+                            url:
+                             "https://m.media-amazon.com/images/I/11uufjN3lYL._SX90_SY90_.png",
+                             productName: "Zeus",
+                             cost: 999999999,
+                             discount: 0,
+                             uid: "asdfghjkl",
+                             sellerName: "don",
+                             sellerUid: "lkjhgfdsa",
+                             rating: 1,
+                             noOfRating: 1,
+                             ),
+                             ),
+  SimpleProductWidget(
+    productModel: ProductModel(
+                            url:
+                             "https://m.media-amazon.com/images/I/11uufjN3lYL._SX90_SY90_.png",
+                             productName: "Zeus",
+                             cost: 999999999,
+                             discount: 0,
+                             uid: "asdfghjkl",
+                             sellerName: "don",
+                             sellerUid: "lkjhgfdsa",
+                             rating: 1,
+                             noOfRating: 1,
+                             ),
+                             ),
+  SimpleProductWidget(
+    productModel: ProductModel(
+                            url:
+                             "https://m.media-amazon.com/images/I/11uufjN3lYL._SX90_SY90_.png",
+                             productName: "Zeus",
+                             cost: 999999999,
+                             discount: 0,
+                             uid: "asdfghjkl",
+                             sellerName: "don",
+                             sellerUid: "lkjhgfdsa",
+                             rating: 1,
+                             noOfRating: 1,
+                             ),
+                             ),
+  SimpleProductWidget(
+    productModel: ProductModel(
+                            url:
+                             "https://m.media-amazon.com/images/I/11uufjN3lYL._SX90_SY90_.png",
+                             productName: "Zeus",
+                             cost: 999999999,
+                             discount: 0,
+                             uid: "asdfghjkl",
+                             sellerName: "don",
+                             sellerUid: "lkjhgfdsa",
+                             rating: 1,
+                             noOfRating: 1,
+                             ),
+                             ),
+];
+
+List<String> keysOfRating = [
+  "Very bad",
+  "Poor",
+  "Average",
+  "Good",
+  "Excellent"
+];
